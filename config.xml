@@ -6,7 +6,7 @@
         id        = "com.ucovenant.app"
         version   = "1.0.0">
 
-    <name>uCovenant App</name>
+    <name>uCovenant</name>
 
     <description>
         App that corresponds to the uCovenant.com site.
@@ -58,7 +58,7 @@
     <gap:plugin name="org.apache.cordova.file-transfer" />
     <gap:plugin name="org.apache.cordova.geolocation" />
     <gap:plugin name="org.apache.cordova.globalization" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" />
+   <!-- <gap:plugin name="org.apache.cordova.inappbrowser" /> -->
     <gap:plugin name="org.apache.cordova.media" />
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
