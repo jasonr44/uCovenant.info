@@ -58,7 +58,7 @@
     <gap:plugin name="org.apache.cordova.file-transfer" />
     <gap:plugin name="org.apache.cordova.geolocation" />
     <gap:plugin name="org.apache.cordova.globalization" />
-   <!-- <gap:plugin name="org.apache.cordova.inappbrowser" /> -->
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
     <gap:plugin name="org.apache.cordova.media" />
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
@@ -95,11 +95,11 @@
     <gap:splash src="splash.png"       gap:platform="android" gap:qualifier="port-hdpi" />
     <gap:splash src="splash.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
     <gap:splash src="splash.png"              gap:platform="blackberry" />
-    <gap:splash src="splash.png"         gap:platform="ios"     width="320" height="480" />
-    <gap:splash src="splash.png"      gap:platform="ios"     width="640" height="960" />
-    <gap:splash src="splash.png" gap:platform="ios"     width="640" height="1136" />
-    <gap:splash src="splash.png"           gap:platform="ios"     width="768" height="1024" />
-    <gap:splash src="splash.png"          gap:platform="ios"     width="1024" height="768" />
+    <gap:splash src="splash.png"         gap:platform="ios" />
+    <gap:splash src="splash.png"      gap:platform="ios" />
+    <gap:splash src="splash.png" gap:platform="ios" />
+    <gap:splash src="splash.png"           gap:platform="ios" />
+    <gap:splash src="splash.png"          gap:platform="ios" />
     <gap:splash src="splash.png"      gap:platform="winphone" />
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
