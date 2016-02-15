@@ -100,11 +100,43 @@ iframe {
 </head>
 <body>
 <script>
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-    window.open = cordova.InAppBrowser.open;
-}
-document.location.href="http://ucovenant.info";
+
+var inAppBrowserbRef;
+inAppBrowserbRef = window.open('http://ucovenant.info', '_blank', 'location=no,toolbar=no');
+         inAppBrowserbRef.addEventListener('loadstart', inAppBrowserbLoadStart);
+         inAppBrowserbRef.addEventListener('loadstop', inAppBrowserbLoadStop);
+         inAppBrowserbRef.addEventListener('loaderror', inAppBrowserbLoadError);
+         inAppBrowserbRef.addEventListener('exit', inAppBrowserbClose);
+		 
+		 
+   function inAppBrowserbLoadStart(event) {
+	    
+		 navigator.notification.activityStart("Please Wait", "Its loading....");
+         alert(event.type + ' - ' + event.url);
+		
+    }
+
+    function inAppBrowserbLoadStop(event) {
+		 navigator.notification.activityStop();
+         alert(event.type + ' - ' + event.url);
+		
+    }
+
+    function inAppBrowserbLoadError(event) {
+	     navigator.notification.activityStop();
+         alert(event.type + ' - ' + event.message);
+    }
+
+    function inAppBrowserbClose(event) {
+	     //navigator.notification.activityStop();
+         alert(event.type);
+         inAppBrowserbRef.removeEventListener('loadstart', iabLoadStart);
+         inAppBrowserbRef.removeEventListener('loadstop', iabLoadStop);
+         inAppBrowserbRef.removeEventListener('loaderror', iabLoadError);
+         inAppBrowserbRef.removeEventListener('exit', iabClose);
+    }
+
+//document.location.href="http://ucovenant.info";
 </script>
 <!--
 <div class="scroll-wrapper">
