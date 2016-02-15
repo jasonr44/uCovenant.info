@@ -26,7 +26,7 @@
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
-    <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
     <preference name="webviewbounce"              value="false" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
     <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
     <preference name="stay-in-webview"            value="true" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
@@ -95,11 +95,19 @@
     <gap:splash src="splash.png"       gap:platform="android" gap:qualifier="port-hdpi" />
     <gap:splash src="splash.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
     <gap:splash src="splash.png"              gap:platform="blackberry" />
-    <gap:splash src="splash.png"         gap:platform="ios"    />
-    <gap:splash src="splash.png"      gap:platform="ios"      />
-    <gap:splash src="splash.png" gap:platform="ios"   />
-    <gap:splash src="splash.png"           gap:platform="ios"     />
-    <gap:splash src="splash.png"          gap:platform="ios"   />
+    <platform name="ios">
+    <!-- images are determined by width and height. The following are supported -->
+    <splash src="splash.png" width="320" height="480"/>
+    <splash src="splash.png" width="640" height="960"/>
+    <splash src="splash.png" width="768" height="1024"/>
+    <splash src="splash.png" width="1536" height="2048"/>
+    <splash src="splash.png" width="1024" height="768"/>
+    <splash src="splash.png" width="2048" height="1536"/>
+    <splash src="splash.png" width="640" height="1136"/>
+    <splash src="splash.png" width="750" height="1334"/>
+    <splash src="splash.png" width="1242" height="2208"/>
+    <splash src="splash.png" width="2208" height="1242"/>
+</platform>
     <gap:splash src="splash.png"      gap:platform="winphone" />
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
