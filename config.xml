@@ -26,10 +26,10 @@
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
-    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
-    <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
+    <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="webviewbounce"              value="false" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
     <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
-    <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
+    <preference name="stay-in-webview"            value="true" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
     <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
     <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
     <preference name="exit-on-suspend"            value="false" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
@@ -58,7 +58,7 @@
     <gap:plugin name="org.apache.cordova.file-transfer" />
     <gap:plugin name="org.apache.cordova.geolocation" />
     <gap:plugin name="org.apache.cordova.globalization" />
-   <!-- <gap:plugin name="org.apache.cordova.inappbrowser" /> -->
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
     <gap:plugin name="org.apache.cordova.media" />
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
@@ -71,7 +71,7 @@
         <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     -->
     
-    <gap:plugin name="hu.dpal.phonegap.plugins.spinnerdialog3" spec="1.3.9" source="pgb" />
+   <!-- <gap:plugin name="hu.dpal.phonegap.plugins.spinnerdialog3" spec="1.3.9" source="pgb" /> -->
 
     <!-- Define app icon for each platform. -->
     <icon src="uc.png" />
@@ -81,10 +81,10 @@
     <icon src="uc.png"  gap:platform="android"    gap:qualifier="xhdpi" />
     <icon src="uc.png"     gap:platform="blackberry" />
     <icon src="uc.png"     gap:platform="blackberry" gap:state="hover"/>
-    <icon src="uc.png"            gap:platform="ios"        width="57" height="57" />
-    <icon src="uc.png"            gap:platform="ios"        width="72" height="72" />
-    <icon src="uc.png"         gap:platform="ios"        width="114" height="114" />
-    <icon src="uc.png"         gap:platform="ios"        width="144" height="144" />
+    <icon src="uc.png"            gap:platform="ios"      />
+    <icon src="uc.png"            gap:platform="ios"        />
+    <icon src="uc.png"         gap:platform="ios"         />
+    <icon src="uc.png"         gap:platform="ios"         />
     <icon src="uc.png"          gap:platform="webos" />
     <icon src="uc.png"  gap:platform="winphone" />
     <icon src="uc.png" gap:platform="winphone"   gap:role="background" />
@@ -95,11 +95,11 @@
     <gap:splash src="splash.png"       gap:platform="android" gap:qualifier="port-hdpi" />
     <gap:splash src="splash.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
     <gap:splash src="splash.png"              gap:platform="blackberry" />
-    <gap:splash src="splash.png"         gap:platform="ios"     width="320" height="480" />
-    <gap:splash src="splash.png"      gap:platform="ios"     width="640" height="960" />
-    <gap:splash src="splash.png" gap:platform="ios"     width="640" height="1136" />
-    <gap:splash src="splash.png"           gap:platform="ios"     width="768" height="1024" />
-    <gap:splash src="splash.png"          gap:platform="ios"     width="1024" height="768" />
+    <gap:splash src="splash.png"         gap:platform="ios"    />
+    <gap:splash src="splash.png"      gap:platform="ios"      />
+    <gap:splash src="splash.png" gap:platform="ios"   />
+    <gap:splash src="splash.png"           gap:platform="ios"     />
+    <gap:splash src="splash.png"          gap:platform="ios"   />
     <gap:splash src="splash.png"      gap:platform="winphone" />
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
