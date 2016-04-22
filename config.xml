@@ -79,10 +79,10 @@
 
     <!-- Define app icon for each platform. -->
     <icon src="uc.png" />
-    <icon src="uc.png"   gap:platform="android"    gap:qualifier="ldpi" />
-    <icon src="uc.png"   gap:platform="android"    gap:qualifier="mdpi" />
-    <icon src="uc.png"   gap:platform="android"    gap:qualifier="hdpi" />
-    <icon src="uc.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+    <icon src="ucEdge.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="ucEdge.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="ucEdgepng"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="ucEdge.png"  gap:platform="android"    gap:qualifier="xhdpi" />
     <icon src="uc.png"     gap:platform="blackberry" />
     <icon src="uc.png"     gap:platform="blackberry" gap:state="hover"/>
     <icon src="uc.png"            gap:platform="ios"      />
