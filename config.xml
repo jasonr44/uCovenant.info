@@ -86,9 +86,11 @@
     <icon src="uc.png"     gap:platform="blackberry" />
     <icon src="uc.png"     gap:platform="blackberry" gap:state="hover"/>
     <icon src="uc.png"            gap:platform="ios"      />
-    <icon src="uc.png"            gap:platform="ios"        />
-    <icon src="uc.png"         gap:platform="ios"         />
-    <icon src="uc.png"         gap:platform="ios"         />
+    <!-- iPhone / iPod Touch -->
+	<icon src="uc-57.png" gap:platform="ios" width="57" height="57" />
+	<!-- iPad -->
+    <icon src="uc-72.png" gap:platform="ios" width="72" height="72" />
+	
     <icon src="uc.png"          gap:platform="webos" />
     <icon src="uc.png"  gap:platform="winphone" />
     <icon src="uc.png" gap:platform="winphone"   gap:role="background" />
